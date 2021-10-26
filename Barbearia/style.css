@@ -4,32 +4,20 @@ header{
 }
 
 .caixa{
-	width: 1040px;
+	width: 940px;
 	margin: 0 auto;
 	position: relative;
 }
 
-h1{
-	width: 90px;
-	position: absolute;
-    left: 2px;
-}
-
-h2{
-	padding: 25px 0;
-	font-size: 50px;
-	font-style: bold;
-}
-
 nav{
 	position: absolute;
-	top:50px;
-	right:50px;
+	top:110px;
+	right:0;
 }
 
 nav li{
 	display: inline;
-	margin: 10px 10px 10px 15px;
+	margin: 0 0 0 15px;
 }
 nav a{
 	text-transform: uppercase;
@@ -39,75 +27,122 @@ nav a{
 	text-decoration:none;
 }
 
-.fundo{
-	background-image:  url("banner.jpg");
+nav a:hover{
+	color:#C78789;
+	text-decoration:underline; 
 }
 
-p{
-	text-align:center
+.produtos{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 10;
+l
+
 }
 
-.tituloPrincipala{
-	padding-left: 20px;
-}
-
-
-.principal{
-		background-image:  url("banner.jpg");
-		opacity: 0.7;
-		padding: 200px;
-}
-
-.textoPrincipal{
-    color:black;
-    background-color: #C0C0C0;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 30px;
-}
-
-h3{
-	padding: 25px 0;
-	font-size: 30px;
-	font-style: bold;
-}
-
-
-strong{
-	color:#8B4513;
-}
-
-.itens{
-	font-style: italic;
-}
-
-.beneficios{
-	background: #CCCCCC;
-	padding: 20px;
-}
-
-
-ul{
+.produtos li{
 	display: inline-block;
-	vertical-align: top;
-	width: 40%
-	margin-right:15%;
-}
-
-li{
+	text-align: center;
 	width: 30%;
-	padding: 25px 0;
-	
-}
-
-.tituloBeneficios{
-	padding: 25px 0;
-	font-size: 30px;
-	font-style: italic;
-}
-
-.imgbeneficios{
-	vertical-align: left;
-	margin: 0 50%;
+	vertical-align: top;
+	margin: 0 1.5%;
 	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover{
+	border-color: #C87888;
+}
+
+.produtos li:active{
+	border-color: #088C19;
+}
+
+.produtos li:hover h2{
+	font-size: 35px;
+}
+
+.produtos h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.preco{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.descricao{
+	font-size: 18px;
+}
+
+footer{
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.rodape{
+	color:#FFFFFF;
+	font-size: 13px;
+}	
+main{
+	width: 940px;
+	margin: 0 auto;
+}
+
+form{
+	margin: 40px 0;
+}
+
+form label,form legend{
+	display: block;
+	font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
+	display: block;	
+	margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}	
+
+.checkbox{
+	margin:20px 0;
+}
+	
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+.enviar:hover{
+	background: darkorange;
+	transform: scale(1.1);
+}
+
+table{
+	margin:20px 0 40px;
+}
+
+thead{
+	background: grey;
+	color:white;
+	font-weight: bold;
+}
+
+td,th{
+	border: 1px solid #000000;
+	padding: 8px 15px;
 }
